@@ -1,0 +1,103 @@
+@font-face{
+    font-family:Inter ;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face{
+    font-family:Inter-regular ;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face{
+    font-family:Inter-SemiBold ;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter-SemiBold;
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 900px;
+    max-width: 1440px;
+    height: 80%;
+    background-color: hsl(0, 0%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.info{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info h1{
+    font-size: 700;
+    font-family:Inter;
+}
+.info h3{
+    margin: 5px;
+    font-size: 700;
+    font-family:Inter;
+    color: hsl(75, 94%, 57%);
+}
+.font_end{
+    margin: 20px;
+    font-size: 700;
+    font-family:Inter-regular;
+}
+.sochal{
+    width: 90%;
+    margin: 5px 60px;
+}
+.sochal ul {
+    list-style: none;
+    margin: 10px;
+    width: 100%;
+}
+.sochal ul li{
+    font-size: 400;
+    font-family: Inter-SemiBold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 40%);
+    margin: 15px;
+    height: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+.sochal ul li:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media(max-width: 740px){
+    .content{
+        width: 370px;
+        min-width: 300px;
+    }
+}
